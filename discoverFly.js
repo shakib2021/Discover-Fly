@@ -146,15 +146,31 @@ var nowTotalIs=totalNumber+subtotalIncrease+vatIncrease-totalNumber;
 //////book now
 var bookNow=document.getElementById("bookNow");
 bookNow.addEventListener("click",function(){
+  var  from2=document.getElementById("from").value;
   
+if( from2===""){
     
-if( from3.length==""){
-    var  from3=document.getElementById("from").value;
-    
-   
-  
     alert("plz fill the form");
+}
+var  to2=document.getElementById("to").value;
 
+if( to2===""){
+    
+    alert("plz fill the form");
+}
+var  departure2=document.getElementById("depar").value;
+
+if( departure2===""){
+    
+  alert("plz fill the form");
+}
+
+
+var  return2=document.getElementById("return").value;
+
+if( return2===""){
+    
+  alert("plz fill the form");
 }
 
  else{

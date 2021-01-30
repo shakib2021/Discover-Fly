@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <section id="booking section" class="main-content container">
+        <div class="booking-form">
+         
+            <h3>Booking Flights</h3>
+            <div class="input-group">
+               
+                <label for="">Flying From</label>
+                <input  id="from"  required  class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input id="to" class="inp-style" type="text" name="" placeholder="New York, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input id="depar" class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input id="return" class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($ <span id="first-class-money">150</span> )</label>
+                    <input class="inp-style inp-width" id="input1" value="1" type="number" name="">
+                </div>
+                <div class="plus-minus-btn">
+                    <p> <span id="plus-btn">+</span>  <span id="minus-btn">-</span> </p>
+                </div>
+            </div>
+            
+            <div class="input-group f-class">
+                <div>
+                    <label for="">Economy ($ <span id="economy-class-money">100</span> )</label>
+                    <input id="input2" value="1" class="inp-style inp-width" type="number" name="">
+                </div>
+                <div class="plus-minus-btn">
+                    <p> <span id="plus-btn2">+</span> <span id="minus-btn2">-</span> </p>
+                </div>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="firstClassCurrent">250</span> </p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="vat">25</span> </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="total">165</span> </p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="bookNow" class="btn-style">Book Now</button>
+       
+        </div>
+
+        <div class="booking-content">
+            <h1>discover <br> around the world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+        </div>
+    </section>
+
+    <!--Thank You is not enough-->
+
+    <div id="complete" class="bookComplete">
+        <h1> Have a nice trip</h1>
+         <h2 class="destination">From: <span id="from2" class="color"></span></h2>
+         <h2  class="destination">To: <span id="too"class="color"></span></h2>
+         <h2  class="destination">Departure: <span id="departure" class="color"></span></h2>
+         <h2  class="destination">Return: <span id="return2" class="color"></span></h2>
+         <h2  class="destination">First Class Ticket: <span id="firstClassTicket" class="color"></span></h2>
+         <h2  class="destination">Economic Class Ticket: <span id="econoClassTicket" class="color"></span></h2>
+         <h2  class="destination">Total Ticket: <span id="totalTicket2" class="color"></span></h2>
+         <h2  class="destination">Total Cost: <span id="cost" class="color"></span></h2>
+    </div>
+
+
+
+
+    <script src="discoverFly.js"></script>
+</body>
+
+</html>
